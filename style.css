@@ -3,7 +3,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(197, 183, 183);
 }
 
 .card{
@@ -17,29 +17,56 @@
     border-radius: 15px;
     gap: 20px;
     color: #fff;
+    position: relative;
 }
 
-.card img{
+.card .img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.card .img.ativado{
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    margin-top: 30px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
 
-.card h2{
+.cardConteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.cardConteudo h2{
     color: rgb(216, 195, 2);
     font-size: 15px;
 }
 
-.card button{
+.cardConteudo button{
     width: 300px;
     height: 40px;
     border-radius:10px;
     border: none;
     background: #494949;
+    margin: 0.8em;
 }
 
-.card button a{
+.cardConteudo button a{
     color: #fff;
     font-size: 18px;
+}
+
+.cardConteudo button a:hover{
+    color: #dfd10c;
+    font-size: 18px;
+    transition: all ease 0.5s;
 }
