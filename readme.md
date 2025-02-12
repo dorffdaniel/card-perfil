@@ -4,6 +4,7 @@
 ## Tecnologias usadas
 - HTML
 - CSS
+- JS
 
 ## Sobre
-projeto criado atraves do Front-end Mentor 
+projeto criado atraves do Front-end Mentor, atualizei implementando js
