@@ -28,6 +28,7 @@
     border-radius: 15px;
     cursor: pointer;
     transition: all ease 0.5s;
+    z-index: 1;
 }
 
 .card .img.ativado{
@@ -58,6 +59,7 @@
     border: none;
     background: #494949;
     margin: 0.8em;
+    cursor: pointer;
 }
 
 .cardConteudo button a{
@@ -69,4 +71,24 @@
     color: #dfd10c;
     font-size: 18px;
     transition: all ease 0.5s;
+}
+
+.res{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12em;
+    text-align: center;
+    width: 19em;
+    border-radius: 1em;
+    font-size: calc(0.1em + 1vw);
+    background: #141414;
+    color: #fff;
+    margin-left: 1em;
+    padding: 1em;
+    opacity: 0;
+}
+
+.res.ativo{
+    opacity: 1;
 }
